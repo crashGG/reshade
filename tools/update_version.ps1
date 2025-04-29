@@ -34,12 +34,12 @@ $official = Test-Path ($path + "\..\sign.pfx")
 @"
 #pragma once
 
-#define VERSION_FULL $([string]::Join('.', $version))
-#define VERSION_MAJOR $($version[0])
-#define VERSION_MINOR $($version[1])
-#define VERSION_REVISION $($version[2])
-#define VERSION_BUILD $($version[3])
+#define VERSION_FULL 6.4.9.9
+#define VERSION_MAJOR 6
+#define VERSION_MINOR 4
+#define VERSION_REVISION 9
+#define VERSION_BUILD 9
 
-#define VERSION_STRING_FILE "$([string]::Join('.', $version))"
-#define VERSION_STRING_PRODUCT "$($version[0]).$($version[1]).$($version[2])$(if (-not $official) { " UNOFFICIAL" })"
+#define VERSION_STRING_FILE "6.4.9.9"
+#define VERSION_STRING_PRODUCT "6.4.X DEV"
 "@ | Out-File -FilePath $path -Encoding ASCII
