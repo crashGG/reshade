@@ -1134,7 +1134,7 @@ void reshade::runtime::draw_gui()
 		else
 		{
 			ImGui::TextUnformatted("ReShade " VERSION_STRING_PRODUCT);
-
+			/* crashGG 注释掉烦人的升级提示
 			if ((s_latest_version[0] > VERSION_MAJOR) ||
 				(s_latest_version[0] == VERSION_MAJOR && s_latest_version[1] > VERSION_MINOR) ||
 				(s_latest_version[0] == VERSION_MAJOR && s_latest_version[1] == VERSION_MINOR && s_latest_version[2] > VERSION_REVISION))
@@ -1147,7 +1147,7 @@ void reshade::runtime::draw_gui()
 			else
 			{
 				ImGui::Text(_("Visit %s for news, updates, effects and discussion."), "https://reshade.me");
-			}
+			}*/
 
 			ImGui::Spacing();
 
